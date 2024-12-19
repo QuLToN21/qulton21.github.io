@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuLToN</title>
     <style>
+                /* Додаємо адаптивність для зображень */
+        .futures-section img, .home-image, .futures-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Для маленьких екранів, таких як мобільні пристрої */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem; /* Зменшуємо розмір заголовка на мобільних */
+            }
+            .section {
+                margin: 20px; /* Менші відступи на мобільних */
+                padding: 15px; /* Менший padding */
+                max-width: 100%; /* Максимальна ширина секції 100% */
+            }
+            .release-image, .app-preview {
+                max-width: 100%; /* Зображення в секціях будуть адаптивними */
+            }
+            .links a {
+                width: 100%; /* Робимо посилання повноширокими на мобільних */
+                text-align: center;
+            }
+        }
+
         body {
             margin: 0;
             padding: 0;
